@@ -1,0 +1,265 @@
+
+#page_top{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: -50px;
+	bottom: 50px;
+	background: #ef3f40;
+	opacity: 0.6;
+	border-radius: 50%;
+  }
+  #page_top a{
+	position: relative;
+	display: block;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+  }
+  #page_top a::before{
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: '\f102';
+	font-size: 25px;
+	color: #fff;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: -5px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+  }
+  
+  
+
+
+
+body{
+	background-color:#F9F4EE;
+	font-family:"A-OTF Futo Min A101 Pr6N";
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav > ul {
+	overflow: hidden;
+	background-color:#F76262;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.nav > ul li {
+	width: 25%;
+	margin: 5px auto;
+	border-right: 1px solid #bbbbbb;
+}
+
+/* 一番右の線を消す */
+.nav > ul li:last-child {
+	border-right: none;
+}
+
+/* ナビの文字部分 */
+.nav > ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 7px 8px;
+	text-decoration: none;
+	font-size: 70%;
+}
+
+@media(min-width:768px){
+	.nav > ul li a {
+		font-size: 70%;
+	}
+}
+
+@media(min-width:990px){
+	.nav > ul li a {
+		font-size: 80%;
+	}
+}
+
+
+
+/* ホバーして色が変わる */
+.nav >ul li a:hover:not(.active) {
+	background-color: #a9bce2;
+}
+
+.active {
+	background-color:#F76262;
+}
+/* ----------------------------------------- */
+
+
+/* 背景画像 */
+.wrapper3{
+	background-image: url(rece.jpg);
+}
+
+/* 半透明にして、文字はそのまま */
+.opa3{
+	background: rgba(255, 255, 255, 0.5);
+}
+
+
+/* サービスの流れ（赤文字） */
+.o-title{
+	font-size: 150%;
+	color: #F76262;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.o-komidasi{
+	text-align: center;
+}
+
+/* 日時指定の枠 */
+.nitiji{
+	text-align: center;
+	border: solid 1px gray;
+	background-color: white;
+	/* margin: 0px 50px 10px 50px; */
+	width: 60%;
+	height: 30px;
+	margin: 0 auto;
+}
+@media(min-width:700px){
+	.nitiji{
+		width: 40%;
+	}
+}
+
+@media(min-width:950px){
+	.nitiji{
+		width: 25%;
+	}
+}
+
+
+
+/* 記入用の枠 */
+.waku{
+	border: 1px solid gray;
+	/* margin: 0px 50px 10px 50px; */
+	width: 60%;
+	padding-top: 10px;
+	background-color: white;
+	height: 20px;
+	margin: 0 auto;
+}
+
+@media(min-width:700px){
+	.waku{
+		width: 40%;
+	}
+}
+
+@media(min-width:950px){
+	.waku{
+		width: 25%;
+}
+}
+
+/* 大きい枠 */
+.dai-waku{
+	border: 1px solid gray;
+	/* margin: 0px 50px 10px 50px; */
+
+	padding-top: 10px;
+	background-color: white;
+	height: 60px;
+	width: 60%;
+	margin: 0 auto;
+}
+
+@media(min-width:700px){
+	.dai-waku{
+		width: 40%;
+	}
+}
+
+@media(min-width:950px){
+	.dai-waku{
+		width: 25%;
+	}
+}
+
+/* 入力内容を確認する */
+.o-kakunin{
+	text-align: center;
+	/* margin: 50px 100px 50px 100px; */
+	border: solid 1px gray;
+	background-color: #AF5D0B;
+	border-radius: 10px;
+	width: 40%;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+@media(min-width:700px){
+	.o-kakunin{
+		width: 30%;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	}
+}
+
+@media(min-width:950px){
+	.o-kakunin{
+		width: 20%;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	}
+}
+.o-kakunin:hover{
+	color: #a9bce2;
+}
+/* ---------------------------------------- */
+.footer{
+	background-color: #F76262;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 30px;
+	font-size: 80%;
+	margin-top: 30px;
+}
+
+/* フッターロゴ */
+.footer img{
+	text-align: center;
+	width: 20%;
+	padding-top: 20px;
+}
+
+@media(min-width:768px){
+	.footer img{
+		width: 15%;
+		padding-top: 15px;
+	}
+}
+
+@media(min-width:950px){
+	.footer img{
+		width: 10%;
+		padding-top:35px;
+	}
+}
+
+.footer a:hover{
+	color: #8c98af;
+}

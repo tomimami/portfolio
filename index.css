@@ -1,0 +1,1062 @@
+
+@charset "UTF8";
+
+#page_top{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: -50px;
+	bottom: 50px;
+	background: #ef3f40;
+	opacity: 0.6;
+	border-radius: 50%;
+  }
+  #page_top a{
+	position: relative;
+	display: block;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+  }
+  #page_top a::before{
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: '\f102';
+	font-size: 25px;
+	color: #fff;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: -5px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+  }
+  
+  
+
+
+
+body{
+	background-color:#F9F4EE;
+	font-family:"A-OTF Futo Min A101 Pr6N";
+}
+
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav > ul {
+	overflow: hidden;
+	background-color:#F76262;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+
+	
+}
+
+.nav > ul li {
+	width: 25%;
+	margin: 5px auto;
+	border-right: 1px solid #bbbbbb;
+	/* border-radius: 8px; */
+	
+}
+
+/* 一番右の線を消す */
+.nav > ul li:last-child {
+	border-right: none;
+}
+
+/* ナビの文字部分 */
+.nav > ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 7px 8px;
+	text-decoration: none;
+	font-size: 70%;
+}
+
+@media(min-width:768px){
+	.nav > ul li a {
+		font-size: 70%;
+	}
+}
+
+@media(min-width:990px){
+	.nav > ul li a {
+		font-size: 80%;
+	}
+}
+
+
+/* ホバーして色が変わる */
+/* .nav >ul li a:hover:not(.active) {
+	background-color: #a9bce2;
+} */
+
+.nav >ul li a:hover{
+	background-color: #a9bce2;
+}
+
+.active {
+	background-color:#F76262;
+}
+
+
+
+/* ナビゲーションが固定 */
+.nav{
+	position: fixed;
+	display: inline;
+	z-index: 1000;
+	width: 100vw;
+}
+
+
+/* 動画のバージョン変化 */
+.movie iframe{
+	width:100%;
+	height:250px;
+	padding-top: 46px;
+}
+
+.movie1 iframe{
+	display: none;
+}
+
+
+@media(min-width:768px){
+.movie iframe{
+display: none;
+}
+
+
+.movie1 iframe{
+	display: inline-block;
+	width:100%;
+	height:450px;
+	padding-top: 46px;
+}
+}
+
+@media(min-width:990px){
+	.movie1 iframe{
+		width:100%;
+		height:650px;
+		padding-top: 50px;
+	}
+}
+
+
+
+
+/* ロゴ */
+.rogo{
+    width: 100%;
+    height: 100%;
+	background-color: #F76262;
+	text-align: center;
+
+}
+
+@media(min-width:768px){
+	.rogo{
+		height: 150px;
+	}
+}
+
+@media(min-width:990px){
+	.rogo{
+		height: 150px;
+	}
+}
+
+.rogo img{
+	text-align: center;
+	width: 25%;
+	padding-top: 7px;
+
+}
+
+@media(min-width:768px){
+	.rogo img{
+		padding-top: 30px;
+	}
+}
+
+@media(min-width:950px){
+	.rogo img{
+		width: 20%;
+		padding-top: 15px;
+	}
+}
+
+
+/* ロゴの下からのメイン */
+/* 背景レース */
+.wrapper{	
+background-image: url(rece.jpg);
+}
+
+/* 半透明にして、文字はそのまま */
+.opa{
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.s-wrapper{
+	background-image: url(washi.png);
+}
+.s-opa{
+	background: rgba(255, 255, 255, 0.5);
+}
+
+
+
+/* 背景木目 */
+.o-wrap{
+	background-image:url(mokume.jpeg);
+}
+
+.o-opa{
+	background: rgba(255, 255, 255, 0.5);
+}
+
+/* 大切な日に、小さなハッピーをプラス。 */
+.main h2{
+	font-size: 20px;
+	color: #F76262;
+	text-align: center;
+	padding-top: 20px;
+}
+
+@media(min-width:768px){
+	.main h2{
+	font-size: 25px;}
+}
+
+@media(min-width:990px){
+	.main h2{
+		font-size:40px;}
+}
+
+
+/* メイン文章 */
+.main div p{
+	text-align: center;
+	font-size: 13px;
+	margin-top: 20px;
+	/* margin-right: 20px; */
+	margin-bottom: 5px;
+	/* margin-left: 60px; */
+	padding-bottom: 30px;
+}
+
+@media(min-width:768px){
+	.main div p{
+	font-size: 16px;}
+}
+
+@media(min-width:990px){
+	.main div p{
+		font-size:20px;}
+}
+
+/* 英語文字 */
+.eigo{
+	font-family: "Alana" ;
+	text-align: center;
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+
+@media(min-width:768px){
+	.eigo{
+	font-size: 60px;}
+}
+
+@media(min-width:950px){
+	.eigo{
+		font-size:70px;}
+}
+
+
+/* 赤枠 */
+.title{
+	text-align: center;
+    width: 100%;
+    height: 40px;
+	background-color: #F76262;
+	/* margin-top: 40px; */
+	margin-bottom: 25px;
+}
+@media(min-width:768px){
+	.title{
+		width: 100%;
+		height: 50px;
+		/* margin-top: 40px; */
+		margin-bottom: 25px;
+		text-align: center;
+	}
+}
+
+@media(min-width:950px){
+	.title{
+		width: 100%;
+		height: 60px;
+		/* margin-top: 50px; */
+		margin-bottom: 30px;
+		line-height: 1;
+		text-align: center;
+	}
+}
+
+
+/* 赤枠の中の英語文字 */
+.title h2{
+	text-align: center;
+	line-height: 1;
+	font-size: 20px;
+}
+
+@media(min-width:768px){
+	.title h2{
+		text-align: center;
+		line-height: 1;
+		font-size: 23px;
+		padding-top: 4px;
+	}
+}
+@media(min-width:950px){
+	.title h2{
+		text-align: center;
+		line-height: 1;
+		font-size: 30px;
+		padding-top: 5px;
+	}
+}
+
+
+/* 赤枠の中のカタカナ文字 */
+.title p{
+	text-align: center;
+	font-size: 20%;
+	line-height: 2;
+}
+
+@media(min-width:768px){
+	.title p{
+		text-align: center;
+		font-size: 25%;
+		line-height: 2;
+		}
+  }
+
+@media(min-width:950px){
+	.title p{
+		text-align: center;
+		font-size: 30%;
+		line-height: 2;
+	}
+}
+
+
+/* 写真 */
+.photo{
+	text-align: center;
+
+}
+
+.photo img{
+	text-align: center;
+	 margin:10px 10px;
+	 margin-bottom: 25px;
+	 width: 60%;
+	 height: auto 0;
+	 
+}
+
+@media(min-width:768px){
+	.photo {
+		display: none;
+	}
+}
+
+	.pc {
+		display: none;
+	}
+	
+
+@media(min-width:768px){
+	.pc{
+		display: block;
+	}
+}
+	
+
+
+
+
+
+
+
+
+/* 
+	 #aspslide{
+		position: relative;      
+		width: 100%;
+		height: 230px;
+		overflow:hidden;
+		padding:0!important;
+	} 
+
+
+	.asnakami{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding:0!important;
+	}   
+	
+	.asnakami img {
+		width: 30%;
+	} */
+	
+/* 	
+	#asnakami1{
+		-moz-animation: fadeinout 30s 0s infinite;
+		-webkit-animation: fadeinout 30s 0s infinite;
+		-o-animation: fadeinout 30s 0s infinite;
+		animation: fadeinout 30s 0s infinite;
+	}
+	
+	#asnakami2{
+		-moz-animation: fadeinout 30s 5s infinite;
+		-webkit-animation: fadeinout 30s 5s infinite;
+		-o-animation: fadeinout 30s 5s infinite;
+		animation: fadeinout 30s 5s infinite;
+	}
+	
+	#asnakami3{
+		-moz-animation: fadeinout 30s 10s infinite;
+		-webkit-animation: fadeinout 30s 10s infinite;
+		-o-animation: fadeinout 30s 10s infinite;
+		animation: fadeinout 30s 10s infinite;
+	}
+	
+	#asnakami4{
+		-moz-animation: fadeinout 30s 15s infinite;
+		-webkit-animation: fadeinout 30s 15s infinite;
+		-o-animation: fadeinout 30s 15s infinite;
+		animation: fadeinout 30s 15s infinite;
+	}
+	
+	#asnakami5{
+		-moz-animation: fadeinout 30s 20s infinite;
+		-webkit-animation: fadeinout 30s 20s infinite;
+		-o-animation: fadeinout 30s 20s infinite;
+		animation: fadeinout 30s 20s infinite;
+	}
+	
+	#asnakami6{
+		-moz-animation: fadeinout 30s 25s infinite;
+		-webkit-animation: fadeinout 30s 25s infinite;
+		-o-animation: fadeinout 30s 25s infinite;
+		animation: fadeinout 30s 25s infinite;
+	}
+	
+	
+	@-moz-keyframes fadeinout {
+	0% { left:0%; opacity:0;}
+	5% { left:0%;opacity:1; }
+	20% { left:0%; opacity:1;}
+	25% { left:0%;opacity:0; }
+	26% { opacity:0;left:100%; }
+	99.99% { opacity:0;left:100%; }
+	100% { opacity:0;left:0%; }
+	}
+	
+	@-webkit-keyframes fadeinout {
+	0% { left:0%; opacity:0;}
+	5% { left:0%;opacity:1; }
+	20% { left:0%; opacity:1;}
+	25% { left:0%;opacity:0; }
+	26% { opacity:0;left:100%; }
+	99.99% { opacity:0;left:100%; }
+	100% { opacity:0;left:0%; }
+	}
+	
+	@-o-keyframes fadeinout {
+	0% { left:0%; opacity:0;}
+	5% { left:0%;opacity:1; }
+	20% { left:0%; opacity:1;}
+	25% { left:0%;opacity:0; }
+	26% { opacity:0;left:100%; }
+	99.99% { opacity:0;left:100%; }
+	100% { opacity:0;left:0%; }
+	}
+	
+	@keyframes fadeinout {
+	0% { left:0%; opacity:0;}
+	5% { left:0%;opacity:1; }
+	20% { left:0%; opacity:1;}
+	25% { left:0%;opacity:0; }
+	26% { opacity:0;left:100%; }
+	99.99% { opacity:0;left:100%; }
+	100% { opacity:0;left:0%; }
+	} */
+
+/*  */
+/* 
+   @media(min-width:950px){
+	.asnakami {
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		width: 45%;
+		height: auto 0;
+	
+		}
+ 	 }  */
+
+		/* #aspslide{
+			position: relative;      
+			width: 100%;
+			height: 200px;
+			overflow:hidden;
+			padding:0!important;
+		}
+		
+		.asnakami{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding:0!important;
+		}   
+		
+		.asnakami img {
+			width: 30%;
+		}
+		
+		
+		#asnakami1{ */
+			/* -moz-animation: fadeinout 30s 0s infinite;
+			-webkit-animation: fadeinout 30s 0s infinite;
+			-o-animation: fadeinout 30s 0s infinite; */
+			/* animation: fadeinout 30s 0s infinite;
+		}
+		
+		#asnakami2{ */
+			/* -moz-animation: fadeinout 30s 5s infinite;
+			-webkit-animation: fadeinout 30s 5s infinite;
+			-o-animation: fadeinout 30s 5s infinite; */
+			/* animation: fadeinout 30s 5s infinite;
+		}
+		
+		#asnakami3{ */
+			/* -moz-animation: fadeinout 30s 10s infinite;
+			-webkit-animation: fadeinout 30s 10s infinite;
+			-o-animation: fadeinout 30s 10s infinite; */
+			/* animation: fadeinout 30s 10s infinite;
+		}
+		
+		#asnakami4{ */
+			/* -moz-animation: fadeinout 30s 15s infinite;
+			-webkit-animation: fadeinout 30s 15s infinite;
+			-o-animation: fadeinout 30s 15s infinite; */
+			/* animation: fadeinout 30s 15s infinite;
+		}
+		
+		#asnakami5{ */
+			/* -moz-animation: fadeinout 30s 20s infinite;
+			-webkit-animation: fadeinout 30s 20s infinite;
+			-o-animation: fadeinout 30s 20s infinite; */
+			/* animation: fadeinout 30s 20s infinite;
+		}
+		
+		#asnakami6{ */
+			/* -moz-animation: fadeinout 30s 25s infinite;
+			-webkit-animation: fadeinout 30s 25s infinite;
+			-o-animation: fadeinout 30s 25s infinite; */
+			/* animation: fadeinout 30s 25s infinite;
+		} */
+		
+		
+		/* @-moz-keyframes fadeinout {
+		0% { left:0%; opacity:0;}
+		5% { left:0%;opacity:1; }
+		20% { left:0%; opacity:1;}
+		25% { left:0%;opacity:0; }
+		26% { opacity:0;left:100%; }
+		99.99% { opacity:0;left:100%; }
+		100% { opacity:0;left:0%; }
+		}
+		
+		@-webkit-keyframes fadeinout {
+		0% { left:0%; opacity:0;}
+		5% { left:0%;opacity:1; }
+		20% { left:0%; opacity:1;}
+		25% { left:0%;opacity:0; }
+		26% { opacity:0;left:100%; }
+		99.99% { opacity:0;left:100%; }
+		100% { opacity:0;left:0%; }
+		}
+		
+		@-o-keyframes fadeinout {
+		0% { left:0%; opacity:0;}
+		5% { left:0%;opacity:1; }
+		20% { left:0%; opacity:1;}
+		25% { left:0%;opacity:0; }
+		26% { opacity:0;left:100%; }
+		99.99% { opacity:0;left:100%; }
+		100% { opacity:0;left:0%; }
+		} */
+		
+		/* @keyframes fadeinout {
+		0% { left:0%; opacity:0;}
+		5% { left:0%;opacity:1; }
+		20% { left:0%; opacity:1;}
+		25% { left:0%;opacity:0; }
+		26% { opacity:0;left:100%; }
+		99.99% { opacity:0;left:100%; }
+		100% { opacity:0;left:0%; }
+		}
+	
+.nakami{
+	margin-bottom: 40px;
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+
+/* #virsion{
+	background-color: white;
+	border: 1px solid gray;
+	margin: 10px 200px;
+  } */
+
+
+
+
+
+
+
+/* スライド  モバイルサイズでは消える*/
+ .single-item figure img{
+	 /* width:0 auto; */
+	 /* width: 30px; */
+	 display: none;
+		 
+ }
+
+
+/* スライド　タブレット以上になったら現れる */
+ @media(min-width:768px){
+	.single-item figure img{
+		display: inline-block;
+		/* visibility: hidden; */
+		margin-bottom: 50px;
+	}
+ }
+
+
+
+
+
+
+/* 値段表記*/
+.nedan {
+	/* margin-left: 10px; */
+	text-align: center;
+	font-size: 15px;
+	}	
+
+@media(min-width:768px){
+	.nedan {
+		margin-left: 20px;
+	font-size: 20px;
+	}
+}
+
+@media(min-width:950px){
+	.nedan {
+		margin-left: 40px;
+	font-size: 25px;
+	}
+
+}
+
+#en{
+	color:#F76262;
+	font-size: 20px;
+}
+
+/* ()内の文字小さく*/
+#kakko{
+	margin-left: 20px;
+	font-size: 10px;
+} 
+
+@media(min-width:950px){
+#kakko{
+		font-size: 15px;
+	}
+}
+
+
+/* ノーマル・クリスマスバージョン２つのクマ写真 */
+.photo2 .kuma{
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	/* margin-top: 20px; */
+	margin-right: 10px;
+	margin-left: 10px;
+	transform: scale(0.9,0.9);
+}
+
+.photo2 .kuma img{
+	border: 1px solid gray;
+	/* margin-top: 20px; */
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.photo3{
+	padding-bottom: 30px;
+}
+/* ２つのクマの下の文字 */
+.name {
+	display: flex;
+	justify-content: center;
+	}
+
+.name > li + li {
+	margin-left: 80px;
+}
+
+
+/* 文字サイズ */
+.name {
+	font-size: 80%;
+}
+
+
+/* ハロウィンバージョン、サンタの写真 */
+.photo3 .santa{
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	transform: scale(0.9,0.9);
+	}
+
+.photo3 .santa img{
+	border: 1px solid gray;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	}
+	
+/* サンタとクマの下の文字 */
+.name{
+	display: flex;
+	justify-content: center;
+	/* margin-right: 10px;
+	margin-left: 10px; */
+
+	}
+
+.name > li + li {
+		margin-left: 90px;
+	}
+
+/* 文字サイズ */
+.santa p{
+	font-size: 80%;
+}
+
+
+/* 大きなクマの顔のみの写真 */
+/* .dekakuma */
+
+
+
+/* 装飾縦文字 */
+/* @media only screen and (max-width: 768px){ */
+/* .tatemoji{ */
+	/* transform: rotate(-90deg); */
+	/* width: 450px; */
+	/* position: absolute; */
+	/* right: 0;
+	top: 0; */
+	/* }
+} */
+
+
+/* 映像オプション */
+.title2{
+	text-align: center;
+	font-size: 20px;
+	color: #F76262;
+}
+
+@media(min-width:768px){
+	.title2{
+		text-align: center;
+		font-size: 30px;
+		color: #F76262;
+	}
+}
+
+@media(min-width:950px){
+	.title2{
+		text-align: center;
+		font-size: 35px;	
+		color: #F76262;
+	}
+}
+
+
+/* オプション内容、値段 */
+.honbun{
+	background-color:white;
+	text-align: center;	
+	padding: 5px;
+	margin: 0px 80px;
+	border: 1px solid gray;
+}
+
+@media(min-width:768px){
+	.honbun{
+		background-color:white;
+		display:flex;
+		justify-content: space-between;
+		text-align: center;			
+		border: 1px solid gray;
+	}
+}
+
+@media(min-width:950px){
+	.honbun{
+		background-color:white;
+		display:flex;
+		justify-content: space-between;
+		padding: 20px;
+		margin: 10px 280px;
+		border: 1px solid gray;
+	}
+}
+
+/* オプション内容の文字の大きさ */
+.honbun p{
+	font-size: 20%;
+}
+
+@media(min-width:768px){
+	.honbun p{
+		font-size: 15px;
+	}
+}
+
+@media(min-width:950px){
+	.honbun p{
+		font-size: 17px;
+		/* line-height: 23px; */
+	}
+}
+
+
+/* オプション内値段（）の中　文字小さく */
+.honbun  #kakko2{
+	font-size: 5px;
+}
+
+
+/* オプションの中の下、文章 */
+.honbun2 p{
+	text-align: center;
+	font-size: 13px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+@media(min-width:768px){
+	.honbun2 p{
+		text-align: center;
+		font-size: 17px;
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+}
+
+
+@media(min-width:950px){
+	.honbun2 p{
+		text-align: center;
+		font-size: 20px;
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+}
+
+
+
+/* 下の英語文字 ?????????????????? */
+.eigo2{
+	font-family: "Alana" ;
+	text-align: center;
+	font-size: 30px;
+}
+@media(min-width:768px){
+	.eigo2{
+		font-size: 60px;
+	}
+}
+@media(min-width:950px){
+	.eigo2{
+		font-size:70px;
+	}
+}
+
+/* インスタ上の文字 */
+.insta{
+	text-align: center;
+	font-size: 15px;
+	color: #F76262;
+}
+
+@media(min-width:950px){
+	.insta{
+		font-size: 20px;
+	}
+}
+
+/* インスタ画像 */
+.insta > img{
+	width: 40%;
+}
+@media(min-width:768px){
+	.insta > img{
+		width: 30%;
+	}
+}
+@media(min-width:950px){
+	.insta > img{
+		width: 20%;
+	}
+}
+
+
+/* What's newの部分 */
+.news{
+	border: 1px solid gray;
+	margin: 10px 50px 50px 50px;
+	padding-top: 10px;
+	background-color: white;
+}
+@media(min-width:768px){
+	.news{
+		margin: 10px 150px 50px 150px;
+	}
+}
+@media(min-width:950px){
+	.news{
+		margin: 10px 300px 50px 300px;
+	}
+}
+
+.news p{
+	text-align: center;
+	line-height: 15px;
+	  
+}
+
+#What{
+	font-size: 150%;
+	  
+}
+
+#osirase{
+	font-size: 50%;
+	line-height: 1px;
+}
+
+
+/* ニュース　日付の表示部分 */
+.word{
+	font-size: 10px;
+}
+
+@media(min-width:768px){
+	.word{
+		font-size: 13px;
+	}
+}
+
+@media(min-width:950px){
+	.word{
+		font-size: 18px;
+	}
+}
+.footer{
+	background-color: #F76262;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 30px;
+	font-size: 80%;
+}
+
+/* フッターロゴ */
+.footer img{
+	text-align: center;
+	width: 20%;
+	padding-top: 20px;
+}
+
+@media(min-width:768px){
+	.footer img{
+		width: 11%;
+		padding-top: 15px;
+	}
+}
+
+@media(min-width:950px){
+	.footer img{
+		width: 13%;
+		padding-top:35px;
+	}
+}
+
+
+
+/* .youtube {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+	}
+	.youtube iframe {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100% !important;
+	height: 100% !important;
+	} */
+
+	.footer a:hover{
+		color: #8c98af;
+	}

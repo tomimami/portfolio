@@ -1,0 +1,225 @@
+
+#page_top{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: -50px;
+	bottom: 50px;
+	background: #ef3f40;
+	opacity: 0.6;
+	border-radius: 50%;
+  }
+  #page_top a{
+	position: relative;
+	display: block;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+  }
+  #page_top a::before{
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: '\f102';
+	font-size: 25px;
+	color: #fff;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: -5px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+  }
+  
+  
+
+
+
+body{
+	background-color:#F9F4EE;
+	font-family:"A-OTF Futo Min A101 Pr6N";
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.nav > ul {
+	overflow: hidden;
+	background-color:#F76262;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.nav > ul li {
+	width: 25%;
+	margin: 5px auto;
+	border-right: 1px solid #bbbbbb;
+}
+
+/* 一番右の線を消す */
+.nav > ul li:last-child {
+	border-right: none;
+}
+
+
+/* ナビの文字部分 */
+.nav > ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 7px 8px;
+	text-decoration: none;
+	font-size: 70%;
+}
+
+@media(min-width:768px){
+	.nav > ul li a {
+		font-size: 70%;
+	}
+}
+
+@media(min-width:990px){
+	.nav > ul li a {
+		font-size: 80%;
+	}
+}
+
+
+
+
+
+
+/* ホバーして色が変わる */
+.nav >ul li a:hover:not(.active) {
+	background-color: #a9bce2;
+}
+
+.active {
+	background-color:#F76262;
+}
+
+
+/* ------------------------------------------- */
+
+/* 背景画像 */
+.wrapper2{
+	background-image: url(rece.jpg);
+}
+
+/* 半透明にして、文字はそのまま */
+.opa2{
+	background: rgba(255, 255, 255, 0.5);
+}
+
+
+
+/* メイン全体を中心寄せ */
+.nagare{
+	text-align: center;
+}
+
+
+/* サービスの流れ（赤文字） */
+.n-title{
+	font-size: 150%;
+	color: #F76262;
+	padding-top: 30px;
+	
+}
+
+@media(min-width:768px){
+	.n-title{
+		font-size: 180%;
+	}
+}
+
+@media(min-width:990px){
+	.n-title{
+		font-size: 200%;
+	}
+}
+
+
+/* サービス小見出し　１、２、３ */
+.n-komidasi h2{
+	font-size: 120%;
+	margin-top: 20px;
+	margin-bottom:10px ;
+	/* background-color: #FFCECC; */
+}
+
+@media(min-width:768px){
+	.n-komidasi h2{
+		font-size: 150%;
+	}
+}
+
+@media(min-width:990px){
+	.n-komidasi h2{
+		font-size: 160%;
+	}
+}
+
+
+.n-bun{
+	font-size: 90%;
+}
+@media(min-width:768px){
+	.n-bun{
+		font-size: 110%;
+	}
+}
+
+@media(min-width:990px){
+	.n-bun{
+		font-size: 110%;
+	}
+}
+
+
+
+
+/* --------------------------------------------- */
+
+
+.footer{
+	background-color: #F76262;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 30px;
+	margin-top: 30px;
+	font-size: 80%;
+}
+
+/* フッターロゴ */
+.footer img{
+	text-align: center;
+	width: 20%;
+	padding-top: 20px;
+}
+
+@media(min-width:768px){
+	.footer img{
+		width: 15%;
+		padding-top: 15px;
+	}
+}
+
+@media(min-width:950px){
+	.footer img{
+		width: 13%;
+		padding-top:35px;
+	}
+}
+
+
+.footer a:hover{
+	color: #8c98af;
+}
