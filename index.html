@@ -24,6 +24,11 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<!-- 横からの入ってくるアニメーション -->
+	<link rel="stylesheet" href="css/base.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+
+
 </head>
 
 <body>
@@ -49,14 +54,19 @@
                 &mute=1&rel=0
                 &modestbranding=1" frameborder="0" allowfullscreen>
 			</iframe>
-
+			
 		</div>
+
+
 		<!-- パソコン -->
 		<div class="movie1">
 			<iframe
 				src="https://www.youtube.com/embed/De-ZGrmqjsQ?loop=1&playlist=De-ZGrmqjsQ&autoplay=1&mute=1&rel=0&modestbranding=1"
 				frameborder="0" allowfullscreen>
+
 			</iframe>
+
+			<!-- <button type="button" class="mdl-soundBtn js-soundBtn">SOUND ON</button> -->
 		</div>
 
 
@@ -72,8 +82,10 @@
 		<div class="wrapper">
 			<div class="opa">
 				<section class="main">
-					<h2>大切な日に、小さなハッピーをプラス。</h2>
-					<div>
+					<div class="effect-fade">
+						<h2>大切な日に、小さなハッピーをプラス。</h2>
+					</div>
+					<div class="effect-fade">
 						<p>きっと喜ぶ。ちょっとしたサプライズ。<br>
 							その瞬間の幸せなドラマは、<br>
 							世界にたったひとつ。<br>
@@ -83,15 +95,15 @@
 							きっと、あたたかく残る。<br>
 							最高の笑顔と、素敵な思い出作りを<br>
 							全力でサポートします。
-						</p>
+					</p>
 					</div>
 				</section>
-		
+	
 
 
 		<!-- 英語文字 -->
 		<section class="eigo">
-			<div>Love is Power for your loved one</div>
+			<div class="effect-fade">Love is Power for your loved one</div>
 		</section>
 
 
@@ -130,51 +142,76 @@
 				</section>
 
 
-			
-				<section id="virsion">
-					<!-- 値段表記　　 -->
-					<section class="nedan">
-						<h3>ハッピーベアが風船を持って、おめでとうピンポン</h3>
-						<p>
-							<span id="en">¥　○○○○○ </span>
-							<span id="kakko">（消費税・サービス料込）</span>
-						</p>
-					</section>
+				<!-- <div id="float" class="clearfix"> -->
+					<!-- 左のフロートスペース -->
+					<div class="l_wrapper">
+						<!-- <div class="washi"> -->
+							<section class="leftspace">	
+									<!-- <div style="height:2000px;"> -->
+								<div style="height:10px;margin-top:200px;position:relative;">
+									<img src="yellow.png" id="move1">
+								</div>
+								<!-- </div> -->
+							</section>
+						<!-- </div> -->
+					</div>
 
-					<!-- バージョンの写真① -->
-					<section class="photo2">
-						<div class="kuma">
-							<img src="kuma1.png" alt="ノーマル">
-							<img src="kuma2.png" alt="クリスマス">
-						</div>
-					</section>
+					<section id="virsion">
+						<!-- 値段表記　　 -->
+						<section class="nedan">
+							<div class="effect-fade">
+								<h3>ハッピーベアが風船を持って、おめでとうピンポン</h3>
+							</div>
+							<p>
+								<span id="en">¥　○○○○○ </span>
+								<span id="kakko">（消費税・サービス料込）</span>
+							</p>
+						</section>
 
-					<!-- バージョンネーム文字 -->
-					<ul class="name">
-						<li>ノーマルバージョン</li>
-						<li>クリスマスバージョン</li>
-					</ul>
+						<!-- バージョンの写真① -->
+						<section class="photo2">
+							<div class="kuma">
+								<img src="kuma1.png" alt="ノーマル">
+								<img src="kuma2.png" alt="クリスマス">
+							</div>
+						</section>
 
-					<!-- バージョンの写真② -->
-					<section class="photo3">
-						<div class="santa">
-							<img src="K113_20181115115451_sum.jpg" alt="サンタクロース">
-							<img src="kuma3.png" alt="ハロウィン">
-						</div>
-
-						<!-- バージョンネーム文字② -->
+						<!-- バージョンネーム文字 -->
 						<ul class="name">
-							<li>サンタクロース</li>
-							<li>ハロウィンバージョン</li>
+							<li>ノーマルバージョン</li>
+							<li>クリスマスバージョン</li>
 						</ul>
+
+						<!-- バージョンの写真② -->
+						<section class="photo3">
+							<div class="santa">
+								<img src="K113_20181115115451_sum.jpg" alt="サンタクロース">
+								<img src="kuma3.png" alt="ハロウィン">
+							</div>
+
+							<!-- バージョンネーム文字② -->
+							<ul class="name">
+								<li>サンタクロース</li>
+								<li>ハロウィンバージョン</li>
+							</ul>
+						</section>
 					</section>
-				</section>
 
+
+					<!-- 右のフロートスペース -->
+					<div class="rightspace">
+						<!-- <div style="height:3000px"> -->
+							<div style="height:10px;margin-top:350px;position:relative;">
+								<img src="green.png" id="move2">
+							</div>
+						<!-- </div> -->
+					</div>
+
+				</div>
 			</div>
-		</div>
+		<!-- </div> -->
 
-
-
+      
 		<!-- オプション（背景木目） -->
 		<div class="o-wrap">
 			<div class="o-opa">
@@ -188,7 +225,7 @@
 				<!-- <section class="option"> -->
 				<!-- 映像オプション（タイトル） -->
 				<section class="title2">
-					<div>
+					<div class="effect-fade">
 						<p>映像オプション</p>
 					</div>
 				</section>
@@ -216,12 +253,14 @@
 
 				<!-- オプション下部分の文章 -->
 				<section class="honbun2">
+					<div class="effect-fade">
 					<p>お誕生日、記念日、プロポーズ、出産のお祝い、<br>
 						女子会、父の日、母の日等。大切で特別なその瞬間に、<br>
 						ちょっとした幸せイベントをプラス。扉の向こう、<br>
 						世界で唯一のおめでとうとありがとうを届けたい。
 
 					</p>
+					</div>
 				</section>
 
 
@@ -245,7 +284,9 @@
 
 		<!-- What's newの上の英語文字 -->
 		<section class="eigo2">
-			<p>Love is Power for your loved one</p>
+			<div class="effect-fade">
+				<p>Love is Power for your loved one</p>
+			</div>
 		</section>
 
 		<!-- What's new -->
@@ -280,6 +321,7 @@
 			<figure><img src="kuma2.png" /></figure>
 			<figure><img src="kuma3.png" /></figure>
 		</div> -->
+	
 
 	</main>
 	<div id="page_top"><a href="#"></a></div>
